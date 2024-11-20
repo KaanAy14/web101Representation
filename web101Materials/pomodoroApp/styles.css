@@ -1,0 +1,148 @@
+/* Genel Ayarlar */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #1e3c72, #a7bde3); /* Mavi gradyan arka plan */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Başlık ve Açıklama */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #FFD700; /* Altın rengi */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 1rem;
+    color: #E0E0E0;
+}
+
+/* Ana Alan */
+main {
+    background: rgba(255, 255, 255, 0.1); /* Saydam arka plan */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Yumuşak gölge */
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Zamanlayıcı Alanı */
+#timer {
+    margin-bottom: 20px;
+}
+
+#timer-label {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #FFFAF0; /* Açık beyaz */
+}
+
+#time-left {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFFFFF; /* Beyaz */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Hafif gölge efekti */
+}
+
+/* Süre Ayarlama Alanı */
+#settings {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#settings label {
+    display: block;
+    margin-bottom: 10px;
+    color: #FFFAF0; /* Açık beyaz */
+    font-size: 1rem;
+}
+
+#settings input {
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+}
+
+#settings button {
+    margin-top: 10px;
+    background: #2196F3; /* Mavi */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#settings button:hover {
+    background: #1976D2; /* Daha koyu mavi */
+}
+
+/* Tamamlanmış Pomodoro Sayısı */
+#pomodoro-count {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#pomodoro-count h3 {
+    font-size: 1.2rem;
+    color: #FFFAF0; /* Açık beyaz */
+}
+
+/* Kontrol Düğmeleri */
+#controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    background: #4CAF50; /* Yeşil */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #45a049; /* Daha koyu yeşil */
+}
+
+#reset {
+    background: #FF5722; /* Turuncu */
+}
+
+#reset:hover {
+    background: #e64a19; /* Daha koyu turuncu */
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #CCCCCC;
+}

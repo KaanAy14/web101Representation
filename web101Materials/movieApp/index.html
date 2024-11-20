@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Uygulaması</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Film Koleksiyonunuz</h1>
+        <p>Film listenizi yönetin ve favori filmlerinizi kaydedin!</p>
+    </header>
+    <main>
+        <!-- Film Ekleme Formu -->
+        <section id="film-form">
+            <h2>Yeni Film Ekle</h2>
+            <form id="add-film-form">
+                <div>
+                    <label for="film-title">Film Adı:</label>
+                    <input type="text" id="film-title" placeholder="Film adı girin" required>
+                </div>
+                <div>
+                    <label for="film-genre">Tür:</label>
+                    <input type="text" id="film-genre" placeholder="Film türü girin" required>
+                </div>
+                <div>
+                    <label for="film-year">Yıl:</label>
+                    <input type="number" id="film-year" placeholder="Film yılı girin" required>
+                </div>
+                <button type="submit">Film Ekle</button>
+            </form>
+        </section>
+
+        <!-- Film Listesi -->
+        <section id="film-list">
+            <h2>Filmler</h2>
+            <ul id="films">
+                <!-- Filmler buraya eklenecek -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Film Uygulaması</p>
+    </footer>
+
+    <!-- JavaScript Dosyasını Bağla -->
+    <script src="script.js"></script>
+</body>
+</html>

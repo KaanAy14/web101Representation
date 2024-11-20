@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taş-Kağıt-Makas</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <h1>Taş-Kağıt-Makas Oyunu</h1>
+        <p>Kendi seçimini yap ve bilgisayara karşı kazan!</p>
+    </header>
+    <main>
+        <!-- Skor Alanı -->
+        <div id="scoreboard">
+            <h2>Skor</h2>
+            <p>Sen: <span id="player-score">0</span></p>
+            <p>Bilgisayar: <span id="computer-score">0</span></p>
+        </div>
+
+        <!-- Kullanıcının Seçimi -->
+        <div id="choices">
+            <button class="choice" data-choice="taş">🪨 Taş</button>
+            <button class="choice" data-choice="kağıt">📄 Kağıt</button>
+            <button class="choice" data-choice="makas">✂️ Makas</button>
+        </div>
+
+        <!-- Sonuç Alanı -->
+        <div id="result">
+            <h2 id="game-result">Sonuç: Henüz Oynanmadı</h2>
+            <p>Sen: <span id="player-choice">-</span></p>
+            <p>Bilgisayar: <span id="computer-choice">-</span></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Taş-Kağıt-Makas Uygulaması</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

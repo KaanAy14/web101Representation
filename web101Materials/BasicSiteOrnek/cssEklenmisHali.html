@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Sayfası</title>
+    <style>
+        /* Genel Stil */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ece9e6, #ffffff);
+            color: #333;
+        }
+
+        /* Başlık ve Metin */
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #34495e;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        p {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+
+        /* Navigasyon */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            background: #2980b9;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #bdc3c7;
+        }
+
+        /* Bölüm Stili */
+        section {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+        }
+        h2 {
+            color: #2980b9;
+            font-size: 1.8em;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* Hizmetler Listesi */
+        #hizmetler ul {
+            list-style: none;
+            padding: 0;
+        }
+        #hizmetler ul li {
+            background: #3498db;
+            color: white;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+        #hizmetler ul li:hover {
+            background: #2980b9;
+        }
+
+        /* Resim */
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 12px;
+            width: 80%;
+            max-width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Form Stili */
+        form {
+            background: #f7f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #34495e;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+        input:focus, textarea:focus {
+            border-color: #2980b9;
+            outline: none;
+        }
+        button {
+            width: 100%;
+            background: #2980b9;
+            color: #ffffff;
+            padding: 12px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background: #3498db;
+        }
+
+        /* Footer */
+        footer {
+            background: #34495e;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        footer h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hoş Geldiniz</h1>
+    <p>Bu, sadece HTML kullanılarak oluşturulmuş basit bir web sayfasıdır.</p>
+
+    <nav>
+        <ul>
+            <li><a href="#hakkinda">Hakkında</a></li>
+            <li><a href="#hizmetler">Hizmetler</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <section style="text-align: center;" id="hakkinda">
+        <h2>Hakkında</h2>
+        <p>Bu web sitesi yalnızca HTML kullanılarak oluşturulmuştur. Basit ve öğretici bir örnek olarak tasarlanmıştır.</p>
+    </section>
+
+    <section style="text-align: center;margin-bottom: 150px;" id="hizmetler">
+        <h2>Hizmetler</h2>
+        <ul>
+            <li>Web Geliştirme</li>
+            <li>SEO Danışmanlığı</li>
+            <li>Dijital Pazarlama</li>
+        </ul>
+    </section>
+
+    <div style="text-align: center;margin-bottom: 90px;">
+        <h2>Fotoğraf</h2>
+    </div>
+
+    <img src="https://loyalfriend.com.tr/wp-content/uploads/2021/12/yavru-kopeklerde-egitim-600x400.webp" alt="Örnek Fotoğraf">
+
+    <div style="text-align: center; margin-top: 150px;">
+        <h2>İletişim Formu</h2>
+    </div>
+
+    <form>
+        <label for="isim">Adınız:</label>
+        <input type="text" id="isim" name="isim">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="mesaj">Mesajınız:</label>
+        <textarea id="mesaj" name="mesaj" rows="4"></textarea>
+
+        <button type="submit">Gönder</button>
+    </form>
+
+    <div style="text-align: center; margin-top: 150px;">
+        <h2>Diğer Sayfalara Göz Atın</h2>
+        <img src="https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638892576/EducationHub/photos/mount-everest-snowdrift.jpg" alt="Örnek Fotoğraf">
+        <a href="https://education.nationalgeographic.org/resource/mount-everest/">Örnek Link</a>
+    </div>
+
+    <footer id="iletisim">
+        <h2>İletişim</h2>
+        <p>Email: info@example.com</p>
+        <p>Telefon: +90 555 555 55 55</p>
+    </footer>
+
+</body>
+</html>

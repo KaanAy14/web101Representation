@@ -1,0 +1,110 @@
+/* Genel Ayarlar */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom right, #4facfe, #00f2fe);
+    color: #fff;
+    display: flex; /* Flexbox kullanımı */
+    justify-content: center; /* Yatay merkezleme */
+    align-items: center; /* Dikey merkezleme */
+    min-height: 100vh; /* Tüm ekranı kapla */
+    text-align: center;
+}
+
+/* Konteyner */
+main {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+}
+
+/* Başlık Alanı */
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #f2f2f2;
+}
+
+/* Skor Alanı */
+#scoreboard {
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+#scoreboard h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffeaa7;
+}
+
+#scoreboard p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Seçim Alanı */
+#choices {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.choice {
+    font-size: 1.5rem;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.choice:hover {
+    transform: scale(1.1);
+    background: #ffeaa7;
+    color: #333;
+}
+
+/* Sonuç Alanı */
+#result {
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#game-result {
+    font-size: 1.5rem;
+    color: #55efc4;
+    margin-bottom: 10px;
+}
+
+#result p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}

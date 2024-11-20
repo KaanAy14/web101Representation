@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Uygulaması</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pomodoro Zamanlayıcı</h1>
+        <p>Odaklan, çalış ve düzenli aralar ver!</p>
+    </header>
+    <main>
+        <!-- Zamanlayıcı Gösterimi -->
+        <div id="timer">
+            <h2 id="timer-label">Çalışma Süresi</h2>
+            <p id="time-left">25:00</p>
+        </div>
+
+        <!-- Süre Ayarlama Alanı -->
+        <div id="settings">
+            <label>
+                Çalışma Süresi (dk):
+                <input type="number" id="work-time-input" min="1" max="60" value="25">
+            </label>
+            <label>
+                Mola Süresi (dk):
+                <input type="number" id="break-time-input" min="1" max="60" value="5">
+            </label>
+            <button id="apply-settings">Ayarla</button>
+        </div>
+
+        <!-- Tamamlanmış Pomodoro Sayısı -->
+        <div id="pomodoro-count">
+            <h3>Tamamlanan Pomodorolar: <span id="completed-count">0</span></h3>
+        </div>
+
+        <!-- Kontrol Düğmeleri -->
+        <div id="controls">
+            <button id="start-stop">Başlat</button>
+            <button id="reset">Sıfırla</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pomodoro Uygulaması</p>
+    </footer>
+
+    <!-- JavaScript Dosyasını Bağla -->
+    <script src="script.js"></script>
+</body>
+</html>

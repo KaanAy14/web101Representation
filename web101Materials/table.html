@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tablo Örneği</title>
+    <style>
+        /* Tablo stil ayarları */
+        table {
+            width: 80%; /* Tablo genişliği */
+            margin: 20px auto; /* Ortalamak için kenar boşluğu */
+            border-collapse: collapse; /* Çizgiler birleşik görünsün */
+        }
+
+        th, td {
+            border: 1px solid #ddd; /* Hücre kenarlıkları */
+            padding: 10px; /* Hücre içi boşluk */
+            text-align: center; /* Hücre içeriği ortalanmış */
+        }
+
+        th {
+            background-color: #f4f4f4; /* Başlık arka plan rengi */
+            font-weight: bold; /* Kalın yazı */
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9; /* Çift satırlar için arka plan rengi */
+        }
+
+        tr:hover {
+            background-color: #eaeaea; /* Üzerine gelindiğinde satırın rengi */
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Öğrenci Bilgileri</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Not Ortalaması</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ali</td>
+                <td>Yılmaz</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Ayşe</td>
+                <td>Demir</td>
+                <td>92</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mehmet</td>
+                <td>Kaya</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Fatma</td>
+                <td>Çelik</td>
+                <td>88</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

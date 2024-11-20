@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta information about the document, including character encoding and viewport settings for responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim Formu</title>
+
+    <!-- Link to Bootstrap's CSS file for styling the page -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Internal CSS for custom styles on the page -->
+    <style>
+        body {
+            background-color: #f4f6f9; /* Light background color for the whole page */
+            font-family: Arial, sans-serif; /* Font style for the page */
+        }
+
+        .form-container {
+            background-color: #ffffff; /* White background for the form */
+            padding: 40px; /* Padding inside the form */
+            border-radius: 10px; /* Rounded corners for the form */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect around the form */
+            max-width: 600px; /* Maximum width of the form */
+            margin: 50px auto; /* Center the form on the page */
+        }
+
+        .form-title {
+            font-size: 1.5rem; /* Font size for the form title */
+            color: #333333; /* Dark color for the title text */
+            text-align: center; /* Center align the title */
+            margin-bottom: 20px; /* Margin below the title */
+        }
+
+        .form-control:focus {
+            box-shadow: none; /* Remove shadow on input focus */
+            border-color: #17a2b8; /* Change border color when the input is focused */
+        }
+
+        .btn-custom {
+            background-color: #17a2b8; /* Custom background color for the submit button */
+            border: none; /* No border for the button */
+            color: #ffffff; /* White text color for the button */
+        }
+
+        .btn-custom:hover {
+            background-color: #138496; /* Darker background color when the button is hovered */
+        }
+
+        .form-text {
+            font-size: 0.85rem; /* Smaller font size for helper text */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Form container holding the contact form -->
+    <div class="container form-container">
+        <h2 class="form-title">İletişim Formu</h2>
+        <!-- Start of the form -->
+        <form>
+            <!-- Name input field -->
+            <div class="form-group">
+                <label for="isimInput">İsim Soyisim</label>
+                <input type="text" class="form-control" id="isimInput" placeholder="İsim ve soyadınızı girin" required>
+                <small id="isimHelp" class="form-text text-muted">Bu alan zorunludur.</small> <!-- Helper text for the name field -->
+            </div>
+
+            <!-- Email input field -->
+            <div class="form-group">
+                <label for="emailInput">Email Adresi</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="ornek@site.com" required> <!-- Placeholder and required field -->
+            </div>
+
+            <!-- Phone number input field (optional) -->
+            <div class="form-group">
+                <label for="phoneInput">Telefon Numarası</label>
+                <input type="tel" class="form-control" id="phoneInput" placeholder="(5XX) XXX XX XX" pattern="[0-9]{4}[0-9]{3}[0-9]{4}">
+                <small class="form-text text-muted">Opsiyonel.</small> <!-- Helper text for phone number field -->
+            </div>
+
+            <!-- Message input field -->
+            <div class="form-group">
+                <label for="messageInput">Mesajınız</label>
+                <textarea class="form-control" id="messageInput" rows="5" placeholder="Mesajınızı buraya yazın" required></textarea> <!-- Placeholder and required field -->
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-custom btn-block">Gönder</button> <!-- Submit button with custom style -->
+        </form>
+    </div>
+
+    <!-- JS Libraries for Bootstrap functionalities (jQuery, Popper, Bootstrap JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

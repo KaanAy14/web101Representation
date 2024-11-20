@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Örneği</title>
+</head>
+<body>
+    <h1>Kayıt Formu</h1>
+    <form action="/submit" method="POST">
+        <!-- Ad Soyad Girişi -->
+        <label for="name">Ad Soyad:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- E-posta Girişi -->
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Şifre Girişi -->
+        <label for="password">Şifre:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <!-- Cinsiyet Seçimi -->
+        <label>Cinsiyet:</label>
+        <input type="radio" id="male" name="gender" value="Erkek">
+        <label for="male">Erkek</label>
+        <input type="radio" id="female" name="gender" value="Kadın">
+        <label for="female">Kadın</label><br><br>
+
+        <!-- İlgi Alanları -->
+        <label>İlgi Alanları:</label><br>
+        <input type="checkbox" id="coding" name="interest" value="Kodlama">
+        <label for="coding">Kodlama</label><br>
+        <input type="checkbox" id="music" name="interest" value="Müzik">
+        <label for="music">Müzik</label><br>
+        <input type="checkbox" id="sports" name="interest" value="Spor">
+        <label for="sports">Spor</label><br><br>
+
+        <!-- Bir Açıklama Girişi -->
+        <label for="comments">Yorumlar:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Gönder Butonu -->
+        <button type="submit">Gönder</button>
+    </form>
+</body>
+</html>
